@@ -109,11 +109,6 @@ h1, h2, h3, h4, p {
     color: var(--primary-section-color);
 }
 
-.logo.header:hover,
-.logo.header:focus {
-    color: var(--visual-text-color);
-}
-
 /* Навигация */
 
 .site-nav {
@@ -135,7 +130,7 @@ h1, h2, h3, h4, p {
     align-items: center;
 }
 
-.container.header {
+.container-header {
     display: flex;
     align-items: center;
 }
