@@ -109,8 +109,8 @@ h1, h2, h3, h4, p {
     color: var(--primary-section-color);
 }
 
-.logo:hover,
-.logo:focus {
+.logo.header:hover,
+.logo.header:focus {
     color: var(--visual-text-color);
 }
 
@@ -172,7 +172,8 @@ h1, h2, h3, h4, p {
 }
 
 .auth-nav .link {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -269,32 +270,15 @@ h1, h2, h3, h4, p {
     line-height: 1.7;
 }
 
-.feauturies .item::before {
-    display: inline-block;
-    content: "";
+.feauturies .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
     background-color: var(--additional-section-color);
-    background-position: center;
-    background-repeat: no-repeat;
     margin-bottom: 30px;
     border-radius: 4px;
-}
-
-.feauturies .item:nth-child(1)::before {
-    background-image: url(../images/antenna.svg);
-}
-
-.feauturies .item:nth-child(2)::before {
-    background-image: url(../images/clock.svg);
-}
-
-.feauturies .item:nth-child(3)::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.feauturies .item:nth-child(4)::before {
-    background-image: url(../images/astronaut.svg);
 }
 
 /* Чем мы занимаемся*/
@@ -370,8 +354,9 @@ h1, h2, h3, h4, p {
 }
 
 .social-link {
-    display: block;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -408,10 +393,11 @@ h1, h2, h3, h4, p {
 }
 
 .clients .link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
     border: 1px solid var(--icon-client-color);
     border-radius: 4px;
     
@@ -531,14 +517,14 @@ h1, h2, h3, h4, p {
 
 .footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .cta {
     margin-left: 70px;
 }
 
-.cta .text {
-    margin-top: 12px;
+.cta-text {
     margin-bottom: 20px ;
 
     color: var(--primary-section-color);
@@ -555,8 +541,9 @@ h1, h2, h3, h4, p {
 }
 
 .cta-link {
-    display: block;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
